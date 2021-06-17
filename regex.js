@@ -135,6 +135,14 @@
 // let result = myString.match(regex);
 // console.log(result);
 
+// eg: FIND ONE AOR MORE CRIMINALS IN A HUNT
+
+// let myString = "P1P2P3P4P5P6CCCP7P8P9";
+// let regex = /C+/; 
+
+// let result = myString.match(regex);
+// console.log(result);
+
 // ===============================================================================
 
 // MATCH A CHARACTER THAT OCCUR ZERO OR MORE TIMES
@@ -163,10 +171,54 @@
 
 //  LAZY MATCHING
 
-let myString = "titanic";
-let regex = /t[a-z]*?i/; // lazy match
+// let myString = "titanic";
+// let regex = /t[a-z]*?i/; // lazy match
+
+// let result = myString.match(regex);
+// console.log(result);
+
+
+// let myString = "<h1> Winter is coming>/h1>";
+// let regex = /<.*>/; // strong match
+
+// let result = myString.match(regex);
+// console.log(result);
+
+// let myString = "<h1> Winter is coming>/h1>";
+// let regex = /<.*?>/; // lazy match
+
+// let result = myString.match(regex);
+// console.log(result);
+
+// ===============================================================================
+
+// MATCH BEGINNING STRING PATTERNS
+
+// let myString = "Ven and Gab both like juice";
+// let regex = /^Ven/; // if ven changes the beginning place it won't find it
+
+// let result = myString.match(regex);
+// console.log(result);
+
+// ===============================================================================
+
+// MATCH ENDING STRING PATTERNS
+
+// let myString = "Ven and Gab both like juice";
+// let regex = /juice$/; // if ven changes the ending place it won't find it
+
+// let result = myString.match(regex);
+// console.log(result);
+
+// ===============================================================================
+
+// MATCH ALL LETTERS AND NUMBERS
+
+let myString = "Ven_Gab 999 are preparing the revival";
+let regex = /\w/g; // get everything a-z 0-9 and some special characters
 
 let result = myString.match(regex);
+// let result = myString.match(regex).length;
 console.log(result);
 
 // ===============================================================================
